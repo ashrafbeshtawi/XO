@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> XO </title>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+<script src="main.js"></script>
+
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <p> Wellcome to me version of XO Game :) </p>
+    <div>
+<table align="center">
+    <tr>
+        <td id="11" class="before" onclick="main('11',1)">11 </td>
+        <td id="12" class="before" onclick="main('12',2)"> 12 </td>
+        <td id="13" class="before" onclick="main('13',3)"> 13 </td>
+    </tr>
+    <tr>
+         <td id="21" class="before" onclick="main('21',1)"> 21 </td>
+        <td id="22" class="before" onclick="main('22',2)"> 22 </td>
+        <td id="23" class="before" onclick="main('23',3)"> 23 </td>
+    </tr>
+     <tr>
+          <td id="31" class="before" onclick="main('31',1)"> 31 </td>
+        <td id="32" class="before" onclick="main('32',2)"> 32 </td>
+        <td id="33" class="before" onclick="main('33',3)"> 33 </td>
+    </tr>
+</table>
+</div>
+<button id="again" onclick="again()">Play Again</button>
+<p id="result"></p>
+</body>
+</html>
