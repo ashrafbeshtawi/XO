@@ -84,8 +84,7 @@ function win(arr,player,a,b,c){
  var rightAlg=false
  var three = howMany(3,arr)
  var one = howMany(1,arr)
- var two=howMany(2,arr)
- var zero=howMany(0,arr)
+
 
  
 
@@ -98,14 +97,7 @@ if(one===6){
      document.getElementById("result").innerHTML=player+" wins!"
      Jquery("#result")
 }
- if(two>=3){
-     document.getElementById("result").innerHTML=player+" wins!"
-     Jquery("#result")
- }
-if(two===2 && theBigTwo(arr,a,b,c)===true ){
-     document.getElementById("result").innerHTML=player+"win!"
-     Jquery("#result")
-}
+
 }
 
 
@@ -121,30 +113,7 @@ return resul;
 
 
 
-function theBigTwo(arr,a,b,c){
-    switch(arr.indexOf(2)){
-    case 0:
-    if(arr[a[0]+2]===2 && a[0]+a[1]!==4 && a[0]===b[0]||arr[a[1]+2]===2 && a[0]+a[1]!==4 && a[1]===b[1]){
-        return true
-    }
-    break;
 
-    case 2:
-    if(arr[c[0]+2]===2 && c[0]+c[1]!==4 &&c[0]===b[0]||arr[c[1]+2]===2 && c[0]+c[1]!==4 &&c[1]===b[1]){
-        return true
-    }
-    break;
-
-    case 1:
-    if(arr[b[0]+2]===2 && b[0]+b[1]!==4||arr[b[1]+2]===2 && b[0]+b[1]!==4){
-        return true
-        
-    }
-    break;  
-    default:
-    return false;   
-    }
-}
 function Jquery(stuff){
  $(document).ready(function(){
 $(stuff).hide("slow");
